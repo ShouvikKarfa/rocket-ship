@@ -336,7 +336,8 @@ Supported controls include:
 - Ontology-aware access rules
 - Policy inheritance downstream
 - When data flows → policies flow with it.
-- Security rules are defined once and automatically enforced across:
+  
+  Security rules are defined once and automatically enforced across:
 - Transforms
 - Notebooks
 - Applications
