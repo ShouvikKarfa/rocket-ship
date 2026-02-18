@@ -313,7 +313,7 @@ Every dataset is automatically:
 - Each version is tied to:
 - - Input versions
 - - Transform code
-- -Execution context
+- - Execution context
 - You can instantly answer: “What did this dataset look like 3 months ago?”
 - Engineers can time-travel, compare versions, and roll back if needed.
 - Traditional Cloud:
@@ -329,18 +329,18 @@ Additionally it requires:
 ## 5. Policy-Aware Data — Security Travels With Data
 In Palantir Foundry, security is embedded directly into datasets and ontology objects, making data policy-aware by design.
 
-Supported controls include:
-Row-level filters
-Column masking
-Object-level permissions
-Ontology-aware access rules
-Policy inheritance downstream
-When data flows → policies flow with it.
-Security rules are defined once and automatically enforced across:
-Transforms
-Notebooks
-Applications
-Analytics tools
+- Supported controls include:
+- Row-level filters
+- Column masking
+- Object-level permissions
+- Ontology-aware access rules
+- Policy inheritance downstream
+- When data flows → policies flow with it.
+- Security rules are defined once and automatically enforced across:
+- Transforms
+- Notebooks
+- Applications
+- Analytics tools
 
 Derived datasets inherit upstream protections, reducing policy drift.
 ```bash
@@ -363,8 +363,8 @@ Operational workflows
 - Case management
 - Decision systems
 - Action controls
-Traditional Cloud
-Security is usually:
+  
+In Traditional Cloud Security is usually:
 - Tool-specific
 - Warehouse-specific
 - BI-specific
@@ -375,6 +375,7 @@ Security is usually:
 Palantir Foundry enables teams to build operational applications directly on governed datasets and ontology objects, not just analytics dashboards.
 
 Because entities, relationships, actions, workflows, and security are native, organizations can build:
+
 - Investigation tools
 - Case management systems
 - Decision workflows
@@ -448,8 +449,7 @@ Foundry provides a unified platform experience where Data engineers, Analysts, G
 
 This shared context reduces tool fragmentation and prevents metadata drift.
 
-Traditional Cloud
-Different tools for:
+Traditional Cloud has different tools for:
 - Engineering
 - Governance
 - BI
