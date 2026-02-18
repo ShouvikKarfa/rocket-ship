@@ -316,10 +316,9 @@ Every dataset is automatically:
   3. Execution context
 - You can instantly answer: “What did this dataset look like 3 months ago?”
 - Engineers can time-travel, compare versions, and roll back if needed.
-- Traditional Cloud:
-  1. Requires specific storage formats:
-  2. Delta Lake
-  3. Iceberg
+- Traditional Cloud requires specific storage formats:
+     1. Delta Lake
+     2. Iceberg
 
 Additionally it requires:
 - Extra configuration
