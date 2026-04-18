@@ -1,4 +1,17 @@
-# Leveraging DSPy with Foundry AIP: Adaptive AI Meets Enterprise-Grade Infrastructure
+---
+layout: default
+title: "Leveraging DSPy with Foundry AIP: Adaptive AI Meets Enterprise-Grade Infrastructure"
+---
+
+
+
+
+# Leveraging DSPy with Foundry AIP: Adaptive AI Meets Enterprise-Grade Infrastructure                             
+                              
+<img src="./images/05-dspy-aip-foundry.png" width="95%" align="center" alt="MLOps in Palantir Foundry" />                          
+                          
+                          
+---                          
 
 ## Collab
 
@@ -35,7 +48,7 @@ The application:
 
 The important takeaway is not the stock screener itself, but the architecture: modular reasoning, evaluation-driven optimization, and interchangeable retrieval strategies.
 
-![View Notebook](finance-agent-with-dspy/rag-stock-screener-with-dspy.ipynb)
+![View Notebook](./finance-agent-with-dspy/rag-stock-screener-with-dspy.ipynb)
 
 ---
 
@@ -291,3 +304,8 @@ The stock screener is simply an illustration of what structured LLM engineering 
 - Enterprise-grade governance
 
 When DSPy and Foundry AIP are leveraged together, organizations can innovate at the frontier of AI—while maintaining the discipline, security, and resilience that enterprise environments demand.
+     
+   
+---
+		   
+# [Back to Rocket Ship front page](https://shauryashaurya.github.io/rocket-ship/)            
