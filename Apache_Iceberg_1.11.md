@@ -50,11 +50,11 @@ This causes slower reads and higher metadata overhead.
 Example
 Suppose a data file contains:
 	| Position | Customer |
-	|----------|----------|
-	| 0 | A |
-	| 1 | B |
-	| 2 | C |
-	| 3 | D |
+|----------|----------|
+| 0 | A |
+| 1 | B |
+| 2 | C |
+| 3 | D |
 
 If rows at positions 1 and 3 are deleted at different times:
 - Delete file 1 → position 1
