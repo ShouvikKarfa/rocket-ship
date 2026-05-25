@@ -35,6 +35,21 @@ This architectural change provides several major benefits:
 - Stronger Multi-Engine Support
 - Future-Proof Architecture
 
+## Deletion Vectors
+### Problem in Iceberg V2
+In Iceberg V2, row-level deletes are handled using positional delete files.
+Whenever a row is deleted or updated, Iceberg creates a separate delete file containing:
+	•	Data file reference
+	•	Row positions to delete
+Over time, these delete files keep increasing.
+During query execution, the engine must open:
+	•	the data file
+	•	all associated delete files
+This causes slower reads and higher metadata overhead.
+
+Example
+Suppose a data file contains:
+
 ## Variant Data Type in Apache Iceberg 1.11
 One of the most important additions in Apache Iceberg 1.11 is support for the Variant Data Type, which improves handling of semi-structured data.
 
