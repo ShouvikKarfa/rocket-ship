@@ -73,15 +73,15 @@ Instead of creating many positional delete files, Iceberg maintains a single del
 Iceberg V3 has:
 - One data file
 - One Puffin file containing the deletion vector
-- 
+  
 This creates a 1:1 mapping between:
 Data File ↔️ Deletion Vector
 
-How Deletion Vectors Work
+How Deletion Vectors Work:
 Deletion vectors store deleted row positions using a Roaring Bitmap inside a Puffin file. Roaring Bitmaps efficiently store deleted row positions using:
-	•	Arrays (few deletes)
-	•	Bitmaps (many deletes)
-	•	RLE/Runs (consecutive deletes)
+- Arrays (few deletes)
+- Bitmaps (many deletes)
+- RLE/Runs (consecutive deletes)
 
 Example: Same data file
 | Position | Customer |
@@ -94,9 +94,9 @@ Example: Same data file
 Suppose, rows 1 and 3 are deleted. Conceptually the deletion vectore stores [1, 3] using a Roaring Bitmap.
 
 During query execution:
-	1.	Iceberg reads the data file
-	2.	Reads the deletion vector bitmap
-	3.	Skips deleted rows
+- Iceberg reads the data file
+- Reads the deletion vector bitmap
+- Skips deleted rows
 	
 Returned result:
 | Position | Customer |
