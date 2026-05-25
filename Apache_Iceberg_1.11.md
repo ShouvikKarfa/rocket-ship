@@ -49,6 +49,12 @@ This causes slower reads and higher metadata overhead.
 
 Example
 Suppose a data file contains:
+| Position | Customer |
+|----------|----------|
+| 0 | A |
+| 1 | B |
+| 2 | C |
+| 3 | D |
 
 ## Variant Data Type in Apache Iceberg 1.11
 One of the most important additions in Apache Iceberg 1.11 is support for the Variant Data Type, which improves handling of semi-structured data.
