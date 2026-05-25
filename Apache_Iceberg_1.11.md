@@ -1,3 +1,35 @@
+# Apache Iceberg 1.11.0: A Major Step Forward for the Open Lakehouse Ecosystem
+
+On May 19, 2026, the Apache Software Foundation officially released Apache Iceberg 1.11.0. The release introduces major architectural enhancements, new data type capabilities, better delete handling, and significant improvements for modern data lakehouse workloads.
+
+For data engineers and organizations building scalable lakehouse platforms, this release strengthens Iceberg’s position as the leading open table format for analytics, AI, streaming, and multi-engine interoperability.
+
+# What is Apache Iceberg?
+
+Apache Iceberg is an open table format designed for huge analytic datasets. It provides:
+
+- ACID transactions
+- Schema evolution
+- Partition evolution
+- Time travel
+- Concurrent writes
+- Hidden partitioning
+- Multi-engine compatibility
+
+Iceberg is widely used with:
+
+- Apache Spark
+- Flink
+- Trino
+- Snowflake
+- Dremio
+* Databricks
+- AWS Athena
+- Palantir Foundry
+
+Instead of managing raw Parquet files manually, Iceberg adds a metadata layer that makes large-scale data lakes behave more like reliable database tables.
+
+# Major Features Introduced in Iceberg 1.11.0
 ## New File Format API in Apache Iceberg 1.11
 Modern data platforms are evolving rapidly, and organizations are no longer limited to a single processing engine or storage optimization strategy. With the release of Apache Iceberg 1.11, one of the most significant architectural improvements introduced is the New File Format API.
 This enhancement makes Iceberg more modular, extensible, and future-ready for next-generation analytics workloads.
