@@ -23,7 +23,7 @@ Iceberg is widely used with:
 - Trino
 - Snowflake
 - Dremio
-* Databricks
+- Databricks
 - AWS Athena
 - Palantir Foundry
 
