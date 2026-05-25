@@ -83,8 +83,7 @@ Deletion vectors store deleted row positions using a Roaring Bitmap inside a Puf
 	•	Bitmaps (many deletes)
 	•	RLE/Runs (consecutive deletes)
 
-Example
-Same data file:
+Example: Same data file
 | Position | Customer |
 |----------|----------|
 | 0 | A |
@@ -98,6 +97,7 @@ During query execution:
 	1.	Iceberg reads the data file
 	2.	Reads the deletion vector bitmap
 	3.	Skips deleted rows
+	
 Returned result:
 | Position | Customer |
 |----------|----------|
@@ -105,13 +105,13 @@ Returned result:
 | 2 | C |
 
 Benefits of Deletion Vector:
-	1.	No delete file accumulation 
-	2.	Query engine only needs:
-	•	Data file
-	•	Single bitmap file.  
-	•	instead of opening many delete files hence faster reads. 
-	3.	Better scalability 
-	4.	Reduced metadata overhead.
+- No delete file accumulation 
+- Query engine only needs:
+  - Data file
+  - Single bitmap file.  
+  - instead of opening many delete files hence faster reads. 
+- Better scalability 
+- Reduced metadata overhead.
 
 ## Variant Data Type in Apache Iceberg 1.11
 One of the most important additions in Apache Iceberg 1.11 is support for the Variant Data Type, which improves handling of semi-structured data.
