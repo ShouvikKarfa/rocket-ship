@@ -216,7 +216,7 @@ This enhancement is important for systems such as high-frequency trading platfor
 
 # Iceberg in Palantir Foundry
 
-Although Apache Iceberg 1.11 introduces several major capabilities at the framework level, availability inside Palantir Foundry depends on the Iceberg version currently supported by Foundry and the platform’s feature rollout timeline. As a result, some Iceberg 1.11 features may not yet be fully available in all Foundry environments.
+Although Apache Iceberg 1.11 introduces several major capabilities at the framework level, availability inside Palantir Foundry depends on the Iceberg version currently supported by Foundry and the platform’s feature rollout timeline. As a result, some Iceberg 1.11 features may not yet be fully available in Foundry.
 
 Palantir Foundry supports Apache Iceberg tables as a modern alternative to traditional Foundry datasets, enabling more open, interoperable, and scalable lakehouse architectures. Foundry provides support for both managed Iceberg tables and externally managed Iceberg tables through catalog integrations.
 
