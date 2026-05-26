@@ -255,6 +255,13 @@ Without Iceberg: You might need to rewrite the entire dataset.
 
 With Iceberg: You can update only the rows that changed.
 
+Example:
+```bash
+
+UPDATE customers
+SET status = 'inactive'
+WHERE last_login < '2022-01-01'
+```
 
 ### 4. Open Ecosystem Compatibility
 
