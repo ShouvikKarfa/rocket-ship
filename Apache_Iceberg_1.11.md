@@ -273,7 +273,6 @@ Iceberg can track:
 
 This allows incremental processing, meaning instead of rereading the whole table, systems can process only changes.
 
-
 ### 5. Better history tracking
 
 Iceberg keeps richer metadata/history.
@@ -284,6 +283,7 @@ One can see:
 - schema changes,
 - snapshots,
 - updates over time.
+
 
 ## Differences Between Iceberg Tables and Foundry Datasets
 
@@ -315,6 +315,7 @@ Iceberg support in Foundry is still in Beta, and some features are not yet fully
 * Some advanced external engine integrations
 
 Additionally, Foundry may not yet support all Iceberg 1.11 features immediately after release.
+
 
 ## Using Iceberg in Foundry
 
@@ -430,6 +431,7 @@ def compute(source_table: IcebergInput, output_table: IcebergOutput):
     )
     output_table.write_table(scan.to_polars())
 ```
+
 
 ## Conclusion
 
