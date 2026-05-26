@@ -238,24 +238,22 @@ This allows modifying rows without rewriting the entire dataset.
 
 ### 2. Better Compaction
 
-Over time, data tables create many small files.
-
-Compaction combines them into fewer larger files for better performance.
+Over time, data tables create many small files. Compaction combines them into fewer larger files for better performance.
 
 Iceberg can do this automatically without interrupting incremental reads.
 
+### 3. Row-Level Edits
 
-### 3. Branch Isolation Enhancements
+Iceberg supports:
+- DELETE
+- UPDATE
+- MERGE INTO
 
-Standard Iceberg shares schemas across branches. Foundry extends Iceberg behavior with branch-scoped schema isolation.
+So you can modify specific rows directly.
 
-This means developers can:
+Without Iceberg: You might need to rewrite the entire dataset.
 
-- Test schema changes safely
-- Experiment on feature branches
-- Avoid affecting production consumers on main
-
-This is a major advantage for enterprise development workflows.
+With Iceberg: You can update only the rows that changed.
 
 
 ### 4. Open Ecosystem Compatibility
