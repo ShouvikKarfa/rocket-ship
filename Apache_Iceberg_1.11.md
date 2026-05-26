@@ -214,7 +214,93 @@ Apache Iceberg 1.11 introduces native nanosecond timestamp support using two new
 
 This enhancement is important for systems such as high-frequency trading platforms, scientific experiments, IoT sensors, and particle physics detectors, where nanosecond-level accuracy is critical. By supporting nanosecond timestamps natively, Iceberg preserves full timestamp semantics, timezone handling, and accurate event sequencing without relying on raw integer workarounds.
 
-## Apache Iceberg in Palantir Foundry
+# Iceberg in Palantir Foundry
+
+Palantir Foundry now supports Iceberg tables as a modern alternative to traditional datasets. Foundry provides both:
+
+- Managed Iceberg tables
+- Virtual Iceberg tables connected to external catalogs such as Unity Catalog, Glue, Polaris, and Horizon. ([Palantir][1])
+
+Foundry also implements the Iceberg REST Catalog specification, enabling interoperability with external compute engines.
+
+
+## Benefits of Iceberg in Foundry
+
+### 1. Row-Level Operations
+
+Iceberg tables in Foundry support:
+
+- DELETE
+- UPDATE
+- MERGE INTO
+
+This allows modifying rows without rewriting the entire dataset.
+
+This is especially useful for:
+
+- CDC pipelines
+- ERP systems
+- Incremental data processing
+- Operational analytics
+
+
+### 2. Improved Incremental Processing
+
+Iceberg changelog support enables efficient incremental consumption of updates and deletes.
+
+For Foundry pipelines, this improves:
+
+- Incremental transforms
+- Ontology syncs
+- Streaming-style architectures
+- Data reconciliation pipelines
+
+
+### 3. Branch Isolation Enhancements
+
+Standard Iceberg shares schemas across branches. Foundry extends Iceberg behavior with branch-scoped schema isolation.
+
+This means developers can:
+
+- Test schema changes safely
+- Experiment on feature branches
+- Avoid affecting production consumers on main
+
+This is a major advantage for enterprise development workflows.
+
+
+### 4. Open Ecosystem Compatibility
+
+Because Iceberg is an open standard, Foundry Iceberg tables can integrate with:
+
+- Spark
+- Trino
+- Flink
+- Snowflake
+- Databricks
+- PyIceberg
+
+without duplicating data. 
+
+This reduces vendor lock-in and improves interoperability.
+
+
+### 5. Better Performance and Scalability
+
+Iceberg’s metadata architecture improves performance for very large datasets by avoiding expensive directory listing operations and excessive file rewrites.
+
+For Foundry customers handling:
+
+- Manufacturing systems
+- Supply chain analytics
+- Vehicle telemetry
+- Financial transactions
+- IoT workloads
+
+this can significantly reduce compute cost and improve query latency.
+
+
+## Using Iceberg in Foundry
 
 Apache Iceberg support in Palantir Foundry is currently evolving and, in many environments, is still available in beta version. Foundry already exposes Iceberg-based APIs such as IcebergInput, IcebergOutput, and native PyIceberg scans, indicating a strong strategic move toward open lakehouse interoperability and metadata-driven architectures.
 
@@ -328,3 +414,14 @@ def compute(source_table: IcebergInput, output_table: IcebergOutput):
     )
     output_table.write_table(scan.to_polars())
 ```
+## Current Limitations in Foundry
+
+Iceberg support in Foundry is still in Beta, and some features are not yet fully supported, including:
+
+* Views
+* Restricted views
+* Streaming
+* Lightweight Pipeline Builder pipelines
+* Some advanced external engine integrations
+
+Additionally, Foundry may not yet support all Iceberg 1.11 features immediately after release.
