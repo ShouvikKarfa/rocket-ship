@@ -68,13 +68,11 @@ Prompt engineering made AI **impressive** because it showed how much could chang
 
 ## AI Use
 
-AI tools were used as a productivity and refinement aid during the creation of this article. The original idea, central argument, structure, and final editorial decisions were developed by the authors.
+## AI Use
 
-AI was used to improve clarity, grammar, readability, flow, and visual communication. In some places, AI-assisted suggestions helped make the article more coherent and polished, but the suggestions were reviewed, adapted, and rewritten where required to preserve the authors’ original intent and perspective.
+AI assistance was used to improve grammar, readability, flow, and overall presentation. All suggestions were reviewed, adapted, and edited to preserve the authors' original intent and perspective. AI tools were used as a productivity and refinement aid while creating this article. The original idea, central argument, structure, and final editorial decisions were developed by the authors.
 
-Some visuals used in this article were generated with the help of AI tools for illustrative purposes. These visuals were selected and included to support the explanation of prompt engineering and context engineering.
-
-Overall, AI was used as an assistive tool to enhance productivity and presentation quality, while the authors retained full responsibility for the content, interpretation, and final published version.
+Some visuals used in this article were generated with the help of AI tools for illustrative purposes.The authors retain full responsibility for the final content, interpretation, and published version.
 
 ---
 		   
