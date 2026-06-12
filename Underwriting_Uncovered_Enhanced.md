@@ -1,10 +1,12 @@
 # Underwriting Uncovered: Risk, Decisions, and Business Impact
+
 ---
 ## Contributors:
 1. [Nilesh Saraf](https://github.com/nileshsaraf56), [LinkedIn](https://www.linkedin.com/in/nilesh-saraf-8b7aa327b/)
 2. [Shishupal Kumar](https://github.com/shishupalamigo), [LinkedIn](https://www.linkedin.com/in/shishupalamigo/)
-3. [Nikhil KG](https://www.linkedin.com/in/nikhil-k-g), [LinkedIn](https://www.linkedin.com/in/nikhil-k-g)
-4. [Shouvik Karfa](https://www.linkedin.com/in/shouvikkarfa/), [LinkedIn](https://www.linkedin.com/in/shouvikkarfa/)
+3. [Nikhil KG](https://github.com/nikhilkg18), [LinkedIn](https://www.linkedin.com/in/nikhil-k-g)
+4. [Shouvik Karfa](https://github.com/ShouvikKarfa), [LinkedIn](https://www.linkedin.com/in/shouvikkarfa/)
+
 ---
 
 
