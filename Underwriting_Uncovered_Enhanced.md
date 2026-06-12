@@ -1,7 +1,15 @@
 # Underwriting Uncovered: Risk, Decisions, and Business Impact
+---
+## Contributors:
+1. [Nilesh Saraf](https://github.com/nileshsaraf56), [LinkedIn](https://www.linkedin.com/in/nilesh-saraf-8b7aa327b/)
+2. [Shishupal Kumar](https://github.com/shishupalamigo), [LinkedIn](https://www.linkedin.com/in/shishupalamigo/)
+3. [Nikhil KG](https://www.linkedin.com/in/nikhil-k-g), [LinkedIn](https://www.linkedin.com/in/nikhil-k-g)
+4. [Shouvik Karfa](https://www.linkedin.com/in/shouvikkarfa/), [LinkedIn](https://www.linkedin.com/in/shouvikkarfa/)
+---
+
 
 ## Summary & Key Points
-Underwriting is the foundational financial process used to identify, evaluate, and responsibly manage risk before a transaction—such as a loan, insurance policy, or investment—is finalized. By gathering and analyzing historical, financial, and behavioral data, institutions place applicants into risk categories to determine approval terms or premium costs. Modern underwriting increasingly integrates technologies like AI, machine learning, and predictive analytics to balance processing speed with accuracy. Ultimately, effective underwriting safeguards an organization’s financial stability, enhances customer trust, and drives sustainable business growth.
+Underwriting is the foundational financial process used to identify, evaluate, and responsibly manage risk before a transaction such as a loan, insurance policy, or investment is finalized. By gathering and analyzing historical, financial, and behavioral data, institutions place applicants into risk categories to determine approval terms or premium costs. Modern underwriting increasingly integrates technologies like AI, machine learning, and predictive analytics to balance processing speed with accuracy. Ultimately, effective underwriting safeguards an organization’s financial stability, enhances customer trust, and drives sustainable business growth.
 
 ---
 
